@@ -6,21 +6,40 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db-generate": "bun x drizzle-kit generate",
+    "db-migrate": "bun x drizzle-kit migrate",
+    "db-studio": "bun x drizzle-kit studio"
   },
   "dependencies": {
+    "@auth/drizzle-adapter": "^1.7.2",
+    "@hono/auth-js": "^1.0.13",
+    "@neondatabase/serverless": "^0.10.1",
+    "@tanstack/react-query": "^5.59.16",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.35.3",
+    "hono": "^4.6.7",
+    "lucide-react": "^0.447.0",
+    "next": "14.2.14",
+    "next-auth": "^5.0.0-beta.22",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.14"
+    "react-hot-toast": "^2.4.1",
+    "sonner": "^1.5.0",
+    "tailwind-merge": "^2.5.3",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "drizzle-kit": "^0.26.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.14"
+    "typescript": "^5"
   }
 }
